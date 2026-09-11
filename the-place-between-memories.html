@@ -737,7 +737,7 @@ button{
 .seen-embed #lockscreen{
   background:
     linear-gradient(180deg, rgba(15,12,9,0.32), rgba(10,8,6,0.68) 55%, rgba(8,6,5,0.9)),
-    url('https://picsum.photos/id/1043/900/1700') center/cover no-repeat,
+    url('lg-bg.jpg') center/cover no-repeat,
     #14110F;
   justify-content:space-between;
   align-items:center;
@@ -941,7 +941,7 @@ button{
    below this block needs to change to re-personalize the site.
    ============================================================ */
 const CONFIG = {
-  personName: "Amara",
+  personName: "Harini",
   nickname: "Little Bird",
   constellationSymbol: "heart", // "heart" | "initial" | "star"
 
@@ -949,7 +949,7 @@ const CONFIG = {
     title: "a song that reminds me of you",
     // dummy placeholder track so the toggle actually plays something —
     // replace with your own hosted audio URL whenever you're ready
-    src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+    src: "Thangamey.mp3"
   },
 
   noticedThings: [
@@ -1009,7 +1009,7 @@ const CONFIG = {
     miss: {
       title: "when you miss me",
       body: "I left something here.",
-      voiceNoteSrc: "" // add your own recording URL — falls back to a placeholder clip if left blank
+      voiceNoteSrc: "voice_note.mp3" // add your own recording URL — falls back to a placeholder clip if left blank
     },
     happy: {
       line: "I wish I could see your face right now."
@@ -1022,26 +1022,26 @@ const CONFIG = {
   // uploaded seen-delivered.html. Keep herName in sync with
   // personName above if you change one.
   seen: {
-    herName: "Amara",
+    herName: "Harini",
     yourInitialLetter: "K",
     notifPreview: "hey. are you free to talk?",
 
     thread: [
       { day: "6 years ago" },
-      { from: "her", text: "ok this is random but I saw your post and had to say something" },
-      { from: "me", text: "lol go on" },
+      { from: "her", text: "Hi anna, Neenga offline nu kamikuthu" },
+      { from: "me", text: "Wait, Varen" },
       { from: "her", text: "you seem like someone who'd actually reply and not ghost" },
       { from: "me", text: "we'll see about that" },
 
       { day: "a few months in" },
-      { from: "her", text: "it's 2am here and I still can't sleep" },
+      { from: "her", text: "it's 12am here and I still can't sleep" },
       { from: "me", text: "same. what's going on" },
       { from: "her", text: "just a lot. don't really know how to explain it" },
       { from: "me", text: "you don't have to explain it right. just say it messy, I'll keep up" },
 
-      { day: "2,000+ miles apart, somehow closer" },
-      { from: "her", text: "different time zone, same 11pm meltdown energy" },
-      { from: "me", text: "some things don't need the same time zone" },
+      { day: "500+ miles apart, somehow closer" },
+      { from: "her", text: "Ennada pandra mandaya" },
+      { from: "me", text: "Summa than di iruken" },
 
       { day: "your worst week that year" },
       { from: "her", text: "I don't think I can do this one" },
@@ -1060,7 +1060,7 @@ const CONFIG = {
     unsentDraft: "six years and you still don't fully know how much you hold together just by being you. wanted you to have this in writing, not just in my head.",
     closingLine: "some things are truer once you actually hit send.",
     whatsappMessage: "I made you something. Six years, all in one place. 🤍",
-    whatsappPhone: "" // digits only incl. country code, or leave blank to open a chat picker
+    whatsappPhone: "+919786750241" // digits only incl. country code, or leave blank to open a chat picker
   }
 };
 
@@ -1592,7 +1592,7 @@ function openComfort(key){
     const voiceAudio = $('#voiceAudio');
     // dummy placeholder clip so this actually plays something —
     // swap CONFIG.comfort.miss.voiceNoteSrc for your real recording
-    voiceAudio.src = CONFIG.comfort.miss.voiceNoteSrc || "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3";
+    voiceAudio.src = CONFIG.comfort.miss.voiceNoteSrc || "voice_note.mp3";
     const playBtn = $('#voicePlayBtn');
     wave.style.opacity = '0.5';
     playBtn.addEventListener('click', function(){
@@ -1647,7 +1647,7 @@ function renderFinal(){
       </div>
       <div class="cap">we'll fill it someday</div>
     </div>
-    <input type="file" accept="image/*" id="photoInput" style="display:none;">
+    <input type="file" accept="Last.png" id="photoInput" style="display:none;">
     <div class="future-input-wrap" id="futureWrap">
       <textarea id="futureText" placeholder="${CONFIG.futureMemoryPrompt}"></textarea>
       <button class="future-save" id="futureSave">keep this</button>
